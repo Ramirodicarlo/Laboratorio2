@@ -29,13 +29,27 @@
     <h2>Últimas Películas en Cartelera</h2>
     <section id="form-movie-new">
       <!--Seccion para agregar una palicula favorita por codigo-->
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <button></button>
+      </form>
+    
+    
     </section>
     <section id="sec-messages">
       <!--Seccion para mensajes-->
+      <p id="exito">Película agregada con éxito!</p>
+      <p id="error">La película seleccionada no se encuentra en la API o se produjo un error al consultar</p>
+      <p id="duplicada">La película ingresada ya se encuentra almacenada</p>
     </section>
     <section id="sec_peliculas">
       <!--Seccion visualizacion de peliculas-->
-      <div class="contenedorPeliculas" id="contenedorPeliculas"></div>
+      <div class="contenedorPeliculas" id="contenedorPeliculas">
+        <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="Creed III">
+        <h3>Creed III</h3>
+        <p></p>
+      </div>
     </section>
     <section id="sec_paginador_peliculas">
       <!--Seccion de Paginacion-->
