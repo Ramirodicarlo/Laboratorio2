@@ -1,0 +1,5 @@
+#sec_ayuda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
