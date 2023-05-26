@@ -21,6 +21,7 @@
 body {
   height: 100%;
   width: 100%;
+  background-color: #d3d3d3;
 }
 ul {
   list-style: none;
@@ -39,6 +40,7 @@ header {
   background-image: url('../img/FondoCine6.webp');
   border-radius: 0 0% 20px 20px ;
   border-bottom: 2px solid var(--color-active);
+  background-repeat: no-repeat;
 }
 nav > ul {
   display: flex;
@@ -47,16 +49,20 @@ nav > ul {
 }
 nav li {
   flex: 0 0 auto;
+  
 }
 nav li a {
   display: block;
   padding: 16px 12px;
+  margin: 0px 1px 0px 1px;
   text-align: center;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
   color: var(--color-texto-blanco);
   background-color: var(--color-back-inactive);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 nav li.current-page a {
   color: var(--color-theme);
@@ -83,6 +89,7 @@ h1 > img {
 }
 h2 {
   color: var(--color-titulos);
+  text-shadow: 1px 1px black;
   margin: 16px 0;
   text-align: center;
 }
@@ -90,7 +97,7 @@ h3 {
   color: var(--color-theme);
   margin: 8px 0;
 }
-main section {
+.flex-container{
   display: flex;
   justify-content: space-around;
 }
@@ -171,3 +178,4 @@ main p {
 .verde{
   background-color:#28a745 ;
 }
+
