@@ -1,10 +1,24 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');*/
-*{
-    font-family: "Monserrat",sans-serif;
+
+form button,form label{
+    margin: 20px 0px;
+}
+#sec-messages{
+    flex-direction: column;
+    width: 100%;
+}
+#sec-messages p{
+    width: 50%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    align-self: center;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .peliculas{
-    color:darkcyan;
-    margin:0px 10px;
+    color:#3e7171;
+    margin:5px 10px;
 }
 .peliculas img{
     width: 100%;
@@ -34,4 +48,38 @@ h3{
 }
 #error{
     background-color: #dc3545;
+}
+div p{
+    margin: 0px;
+}
+.paginacion button {
+    border: none;
+    height: 50px;
+    width:200px;
+    background-color: #24244f;
+    color: #ffffff;
+    border-radius:50px;
+    font-weight:1000;
+    transition: .3s ease all;
+ }
+.paginacion button:hover {
+    background-color: var(--color-back-active);
+}
+    /*Estilos Generales Botones Favoritos*/
+.button {
+    background:#7f8c8d;
+    border: none;
+    color: #ffffff;
+    font-weight:1000;
+    font-size:10px;
+    margin: 10px;
+    padding:10px 0;
+    text-align:center;
+    width:200px;
+    text-decoration:none;
+    box-shadow:0px 3px 0px #373c3c;
+    border-radius:50px;
+}
+.button:hover {
+    box-shadow:0px 0px 0px;
 }

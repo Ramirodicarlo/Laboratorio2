@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  font-family: "Monserrat",sans-serif;
 }
 :root {
   /* Declaro variables CSS con colores principales */
@@ -21,7 +23,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #d3d3d3;
+  background-color: #e0e0e0;
 }
 ul {
   list-style: none;
@@ -70,7 +72,7 @@ nav li.current-page a {
   pointer-events: none;
 }
 main {
-  margin-top: 120px;
+  margin-top: 100px;
   overflow: auto;
   padding: 16px;
   padding-bottom: 60px;
@@ -89,7 +91,7 @@ h1 > img {
 }
 h2 {
   color: var(--color-titulos);
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #000000;
   margin: 16px 0;
   text-align: center;
 }

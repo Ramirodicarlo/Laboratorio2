@@ -12,7 +12,9 @@
 
 <body>
   <header>
+    
     <h1>
+      <img src="D:/escritorio/UTN/LAboratorio 2/TUP-LC2-CINE-APP_Template/img/IconoCine.png" alt="popcorn" class="popcorn">
       <!--Titulo Cabecera-->
       <span>Cartelera de Cine</span>
     </h1>
@@ -37,20 +39,24 @@
     <section id="form-cine_contacto">
       <!-- Sección donde se debe colocar el formulario de contacto-->
       <form>
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="Email"><br>
-        <label for="msj">Mensaje:</label><br>
-        <input type="text" id="msj" name="mensaje"><br>
-        <input type="submit" id="emviar" name="enviar">
-        <input type="reset" id="limpiar" name="limpiar"><br>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email">
+        <label for="msj">Mensaje:</label>
+        <input type="text" id="msj" name="mensaje">
+        <div id="buttonhelp">
+          <button class="button">Limpiar</button>
+          <button class="button">Enviar</button>
+        </div>
       </form>
     </section>
-    <section id="sec-cine-result"></section>
+    <section id="sec-cine-result">
     <!-- Sección donde se debe mostrar los mensajes de error -->
+    <p id="exito2">prueba texto</p>
+    <p id="error2">prueba texto</p>
+    <p id="duplicada2">prueba texto</p>
     </section>
-    <p></p>
   </main>
   <footer>
     <p>Desarrollado con ♥ - LC2</p>
