@@ -8,6 +8,16 @@
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/pages/help.css">
+  <script src="js/pages/help.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("jMFZHUb1pFfU34TAi");
+     })();
+  </script>
+  </head>
+  
 </head>
 
 <body>
@@ -33,7 +43,7 @@
       <!-- Sección de texto de ayuda-->
       <h2>Ayuda Cine App v.1</h2>
       <p>Esta App te permite consultar la cartelera de cine utilizando la API de <a href="https://www.themoviedb.org" target="_blank">The movie database API</a></p>
-      <p>Para poder registrar sus peliculas favoritas debera <a href="favorities.html">Agregar Favorito</a> desde la cartelera y luego visualizar nuestros favoritos desde <a href="index.html">Mis Favoritas</a></p>
+      <p>Para poder registrar sus peliculas favoritas debera <a href="index.html">Agregar Favorito</a> desde la cartelera y luego visualizar nuestros favoritos desde <a href="favorities.html">Mis Favoritas</a></p>
       <p>Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y envienoslo. Lo contactaremos en la brevedad.</p>
     </section>
     <section id="form-cine_contacto">
@@ -46,16 +56,13 @@
         <label for="msj">Mensaje:</label>
         <input type="text" id="msj" name="mensaje">
         <div id="buttonhelp">
-          <button class="button">Limpiar</button>
-          <button class="button">Enviar</button>
+          <button type="button" class="button">Limpiar</button>
+          <button type="button" class="button" onclick="sendEmail()">Enviar</button>
         </div>
       </form>
     </section>
     <section id="sec-cine-result">
     <!-- Sección donde se debe mostrar los mensajes de error -->
-    <p id="exito2">prueba texto</p>
-    <p id="error2">prueba texto</p>
-    <p id="duplicada2">prueba texto</p>
     </section>
   </main>
   <footer>

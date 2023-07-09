@@ -8,11 +8,11 @@
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/pages/favorities.css">
+  <script src="js/pages/favorities.js" defer></script>
 </head>
 
 <body>
   <header>
-    
     <h1>
       <img src="img/IconoCine.png" alt="popcorn" class="popcorn">
       <!--Titulo Cabecera-->
@@ -30,28 +30,27 @@
   <!-- Contenido principal de la página -->
   <main>
     <h2>Mis Peliculas Favoritas</h2>
+    <section class="flex-container" id="sec-messages">
+      <!--Seccion para mensajes-->
+    </section>
     <section id="sec-favorities-list">
       <!--Sección contenido de paliculas favoritas-->
-      <div class="contenedorPeliculasFavoritas" id="contenedorPeliculasFavoritas">
-        <div class="peliculasfav" id="peliculafav1">
-          <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="Creed III">
-          <h3 class="nombre">Creed III</h3>
-          <p class="codigo"><strong>Codigo:</strong>677179</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> Creed III</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="resumen"><strong>Resumen:</strong> Después de dominar el mundo del boxeo, Adonis Creed ha prosperado tanto en su carrera como en su vida familiar. Cuando un amigo de la infancia y ex prodigio de boxeo, Damien Anderson, resurge después de cumplir una larga sentencia en prisión, está ansioso por demostrar que merece su disparo en el ring. El enfrentamiento entre los antiguos amigos es más que una pelea. Para resolver el puntaje, Adonis debe poner su futuro en la línea para luchar contra Damien, un luchador que no tiene nada que perder.</p>
-        </div>
-        <div class="peliculasfav" id="peliculafav2">
-          <img src="https://image.tmdb.org/t/p/w500/lyP4WNmUiiOgl4g2z7ywE0z6SGF.jpg" alt="Gato con Botas">
-          <h3 class="nombre">El Gato con Botas: El último deseo</h3>
-          <p class="codigo"><strong>Codigo:</strong>315162</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> Puss in Boots: The Last Wish</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="resumen"><strong>Resumen:</strong> El Gato con Botas se embarca en un viaje épico para encontrar al mítico Último Deseo y recuperar sus nueve vidas.</p>
-        </div>
-      </div>
+      <template id="movie-card-template">
+      <!-- Plantilla para la tarjeta de película -->
+        <div class="movie-card">
+          <img class="poster" src="">
+          <h3 class="titulo"></h3>
+          <p><b>Código:</b> <span class="codigo"></span></p>
+          <p><b>Título original:</b> <span class="titulo-original"></span></p>
+          <p><b>Idioma original:</b> <span class="idioma-original"></span></p>
+          <p><b>Resumen:</b> <span class="resumen"></span></p>
+          <div class="flex-container">
+            <button class="remove-favorite-button">Quitar de favoritos</button>
+          </div>
+          </div>
+      </template>
     </section>
-     </main>
+  </main>
   <footer>
     <p>Desarrollado con ♥ - LC2</p>
   </footer>

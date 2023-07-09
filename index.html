@@ -7,8 +7,7 @@
   <title>TUP LC2 - TP Integrador - Cine</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/pages/index.css">
-  
-</head>
+  <script src="js/pages/index.js" defer></script>
 
 <body>
   <header>
@@ -36,74 +35,16 @@
       <form >
         <label for="fname">Agregar Pelicula Favorita por Codigo:</label><br>
         <input type="text" id="codigo" name="codigo">
-        <button>Agregar</button>
+        <button type="button" onclick="agregarCodigo()">Agregar</button>
       </form>
-    
     
     </section>
     <section class="flex-container" id="sec-messages">
       <!--Seccion para mensajes-->
-      <p id="exito">Película agregada con éxito!</p>
-      <p id="error">La película seleccionada no se encuentra en la API o se produjo un error al consultar</p>
-      <p id="duplicada">La película ingresada ya se encuentra almacenada</p>
     </section>
     <section id="sec_peliculas">
       <!--Seccion visualizacion de peliculas-->
       <div class="contenedorPeliculas" id="contenedorPeliculas">
-        <div class="peliculas" id="pelicula1">
-          <img src="https://image.tmdb.org/t/p/w500/fcFMd3HdyX7r5gtFwVnn2qr5Yhq.jpg" alt="Creed III">
-          <h3 class="nombre">Creed III</h3>
-          <p class="codigo"><strong>Codigo:</strong>677179</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> Creed III</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="año"><strong>Año:</strong>2023-03-02</p>
-          <button class="button">Agregar a Favoritos</button>
-        </div>
-        <div class="peliculas" id="pelicula2">
-          <img src="https://image.tmdb.org/t/p/w500/lyP4WNmUiiOgl4g2z7ywE0z6SGF.jpg" alt="Gato con Botas">
-          <h3 class="nombre">El Gato con Botas: El último deseo</h3>
-          <p class="codigo"><strong>Codigo:</strong>315162</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> Puss in Boots: The Last Wish</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="año"><strong>Año:</strong>2022-12-07</p>
-          <button class="button">Agregar a Favoritos</button>
-        </div>
-        <div class="peliculas" id="pelicula3">
-          <img src="https://image.tmdb.org/t/p/w500/igFLHxab9zG0M89OmEpnOM6TPXn.jpg" alt="Shazam">
-          <h3 class="nombre">¡Shazam! La furia de los dioses</h3>
-          <p class="codigo"><strong>Codigo:</strong>594767</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> Shazam! Fury of the Gods</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="año"><strong>Año:</strong>2023-03-16</p>
-          <button class="button">Agregar a Favoritos</button>
-        </div>
-        <div class="peliculas" id="pelicula4">
-          <img src="https://image.tmdb.org/t/p/w500/zNKs1T0VZuJiVuhuL5GSCNkGdxf.jpg" alt="Super Mario">
-          <h3 class="nombre">Súper Mario Bros. La película</h3>
-          <p class="codigo"><strong>Codigo:</strong>500356</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> The Super Mario Bros. Movie</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="año"><strong>Año:</strong>2023-04-05</p>
-          <button class="button">Agregar a Favoritos</button>
-        </div>
-        <div class="peliculas" id="pelicula5">
-          <img src="https://image.tmdb.org/t/p/w500/sGSzha9K65abyvzBwXXnSV2sHWV.jpg" alt="La niña de la comunion">
-          <h3 class="nombre">La niña de la comunión</h3>
-          <p class="codigo"><strong>Codigo:</strong>1008005</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> La niña de la comunión</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> Es</p>
-          <p class="año"><strong>Año:</strong>2023-02-10</p>
-          <button class="button">Agregar a Favoritos</button>
-        </div>
-        <div class="peliculas" id="pelicula6">
-          <img src="https://image.tmdb.org/t/p/w500/3oypSaTizrfBbpIeRs8tTOF2EqV.jpg" alt="Transformers">
-          <h3 class="nombre">Transformers: El despertar de las bestias</h3>
-          <p class="codigo"><strong>Codigo:</strong>677177</p>
-          <p class="titulo_original"><strong>Titulo original:</strong> Transformers: Rise of the Beasts</p>
-          <p class="idioma_original"><strong>Idioma original:</strong> En</p>
-          <p class="año"><strong>Año:</strong>2023-06-06</p>
-          <button class="button">Agregar a Favoritos</button>
-        </div>   
       </div>
     </section>
     <section class="flex-container"id="sec_paginador_peliculas">
