@@ -48,15 +48,15 @@
     </section>
     <section id="form-cine_contacto">
       <!-- Sección donde se debe colocar el formulario de contacto-->
-      <form>
+      <form id="emailForm">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name">
         <label for="email">Email:</label>
         <input type="email" id="email" name="Email">
         <label for="msj">Mensaje:</label>
-        <textarea id="msj" rows="20" cols="50" name="comment" form="usrform"></textarea>
+        <textarea id="msj" rows="20" cols="50" name="comment" form="emailForm"></textarea>
         <div id="buttonhelp">
-          <button type="button" class="button" onclick="limpiar()">Limpiar</button>
+          <button type="reset" class="button" >Limpiar</button>
           <button type="button" class="button" onclick="sendEmail()">Enviar</button>
         </div>
       </form>
