@@ -21,6 +21,7 @@ label{
 }
 #msj{
     height: 300px;
+    margin: 5px 0px;
 }
 #buttonhelp{
     display: flex;
