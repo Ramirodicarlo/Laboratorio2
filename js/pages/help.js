@@ -22,6 +22,3 @@ function sendEmail(){
         }
         );
 }
-function limpiar(){
-    document.getElementById("emailForm").reset();
-}
