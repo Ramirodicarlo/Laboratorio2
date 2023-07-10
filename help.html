@@ -54,9 +54,9 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="Email">
         <label for="msj">Mensaje:</label>
-        <input type="text" id="msj" name="mensaje">
+        <textarea id="msj" rows="20" cols="50" name="comment" form="usrform"></textarea>
         <div id="buttonhelp">
-          <button type="button" class="button">Limpiar</button>
+          <button type="button" class="button" onclick="limpiar()">Limpiar</button>
           <button type="button" class="button" onclick="sendEmail()">Enviar</button>
         </div>
       </form>
